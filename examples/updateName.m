@@ -1,4 +1,4 @@
-function UpdateName(username, basePath, project, ref, id1, id2, newName1, newName2, desiredFields)
+function updateName(username, basePath, project, ref, id1, id2, newName1, newName2, desiredFields)
     
     %------------------------------------------------------
     %Description: Update name of an element
@@ -14,10 +14,10 @@ function UpdateName(username, basePath, project, ref, id1, id2, newName1, newNam
     %desiredFields(str array): fields to update["id"
     %"name"]
     %------------------------------------------------------
-    Login(username, basePath);
+    login(username, basePath);
    
-    json1 = ElementApi.get_element(project, ref, id1);
-    json2 = ElementApi.get_element(project, ref, id2);
+    json1 = MMS.ElementApi.get_element(project, ref, id1);
+    json2 = MMS.ElementApi.get_element(project, ref, id2);
     
     out1 = removeFields(json1, desiredFields);
     out2 = removeFields(json2, desiredFields);
@@ -25,5 +25,5 @@ function UpdateName(username, basePath, project, ref, id1, id2, newName1, newNam
     out1 = setfield(out1,'name', newName1);
     out2 = setfield(out2,'name', newName2);
     
-    posted = ElementApi.post_elements(project, ref, [out1,out2])
+    posted = MMS.ElementApi.post_elements(project, ref, [out1,out2])
 end
