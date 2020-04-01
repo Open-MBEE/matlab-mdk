@@ -1,4 +1,4 @@
-function UpdateDocumentation(username, basePath, project, ref, id1, id2, content1, content2, desiredFields)
+function updateDocumentation(username, basePath, project, ref, id1, id2, content1, content2, desiredFields)
     %------------------------------------------------------
     %Description: Update documentation of a presentation
     %             element.
@@ -15,17 +15,17 @@ function UpdateDocumentation(username, basePath, project, ref, id1, id2, content
     %"documentation"]
     %------------------------------------------------------
     
-    Login(username, basePath);
+    login(username, basePath);
    
-    json1 = ElementApi.get_element(project, ref, id1);
-    json2 = ElementApi.get_element(project, ref, id2);
+    json1 = MMS.ElementApi.get_element(project, ref, id1);
+    json2 = MMS.ElementApi.get_element(project, ref, id2);
     
     out1 = removeFields(json1, desiredFields);
     out2 = removeFields(json2, desiredFields);
     
-    out1 = setfield(out1,'documentation', content1);
-    out2 = setfield(out2,'documentation', content2);
+    out1 = setfield(out1, 'documentation', content1);
+    out2 = setfield(out2, 'documentation', content2);
     
-    posted = ElementApi.post_elements(project, ref, [out1,out2]);
+    posted = MMS.ElementApi.post_elements(project, ref, [out1,out2]);
     
 end
