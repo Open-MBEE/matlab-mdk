@@ -2,13 +2,14 @@
 
 [![Download](https://api.bintray.com/packages/openmbee/maven/matlab-mdk/images/download.svg)](https://bintray.com/openmbee/maven/matlab-mdk/_latestVersion)
 
-MATLAB MDK is a toolbox for [MATLAB](https://www.mathworks.com/products/matlab.html) that enables interactions with the [MMS](https://github.com/Open-MBEE/mms) such as retrieving analysis inputs and publishing analysis outputs, e.g. computed values, plots, tables.
+MATLAB MDK is a toolbox for [MATLAB](https://www.mathworks.com/products/matlab.html) that enables interactions with the [MMS](https://github.com/Open-MBEE/mms-alfresco) such as retrieving analysis inputs and publishing analysis outputs, e.g. computed values, plots, tables.
 
 # Quickstart
 
 # Prerequisites
 
 * [MATLAB](https://www.mathworks.com/products/matlab.html)
+* [Model Management System (MMS) 3](https://github.com/Open-MBEE/mms-alfresco)
 
 ## Installation
 
@@ -26,7 +27,7 @@ MATLAB MDK is a toolbox for [MATLAB](https://www.mathworks.com/products/matlab.h
 
 4.  Check out the [example functions](examples).
 
->   The toolbox can also be installed headlessly using [`matlab.addons.install`](https://www.mathworks.com/help/matlab/ref/matlab.addons.install.html).
+>   MATLAB MDK can also be installed headlessly using [`matlab.addons.install`](https://www.mathworks.com/help/matlab/ref/matlab.addons.install.html).
 
 # Local Development
 
