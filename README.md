@@ -29,6 +29,10 @@ MATLAB MDK is a toolbox for [MATLAB](https://www.mathworks.com/products/matlab.h
 
 >   MATLAB MDK can also be installed headlessly using [`matlab.addons.install`](https://www.mathworks.com/help/matlab/ref/matlab.addons.install.html).
 
+# Contributing
+
+To learn how you can get involved in a variety of ways, please see [Contibuting to OpenMBEE](https://www.openmbee.org/contribute).
+
 # Local Development
 
 * Run `build.sh` to generate matlab-mdk build directory.
