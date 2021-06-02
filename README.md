@@ -1,6 +1,6 @@
 # MATLAB MDK
 
-[![Download](https://api.bintray.com/packages/openmbee/maven/matlab-mdk/images/download.svg)](https://bintray.com/openmbee/maven/matlab-mdk/_latestVersion) [![Jira](https://img.shields.io/badge/issues-jira-blue)](https://openmbee.atlassian.net/browse/MTLBMDK)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Open-MBEE/matlab-mdk?label=download)](https://github.com/Open-MBEE/matlab-mdk/releases/latest) [![Jira](https://img.shields.io/badge/issues-jira-blue)](https://openmbee.atlassian.net/browse/MTLBMDK)
 
 MATLAB MDK is a toolbox for [MATLAB](https://www.mathworks.com/products/matlab.html) that enables interactions with the [MMS](https://github.com/Open-MBEE/mms-alfresco) such as retrieving analysis inputs and publishing analysis outputs, e.g. computed values, plots, tables.
 
